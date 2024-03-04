@@ -2,7 +2,7 @@ package es.mde.SpringBasico;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import es.mde.ObjetoTipo;
@@ -13,18 +13,19 @@ public class SpringBasicoApplication {
 	public static void main(String[] args) {
 //		SpringApplication.run(SpringBasicoApplication.class, args);
 		
-		ApplicationContext context = //mi objeto contenedor
+		ConfigurableApplicationContext context = //mi objeto contenedor
 				new ClassPathXmlApplicationContext(
-						new String[]{"config.xml" //aqui ponemos los archivos de configuracion
+						new String[]{
+//								"config.xml" //aqui ponemos los archivos de configuracion
 //								,
-//								"config-scan.xml"
+								"config-scan.xml"
 						}						
 						);
 		ObjetoTipo miObjetoTipo = new ObjetoTipo();
 		miObjetoTipo.init();
 		miObjetoTipo = context.getBean(ObjetoTipo.class);
 		miObjetoTipo.init();
-		
+		context.close();
 	}
 
 }
