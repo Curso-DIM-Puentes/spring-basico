@@ -1,0 +1,88 @@
+2024-03-04 21:14  INFO 53474 --- [restartedMain] e.m.S.SpringBasicoApplication            : Starting SpringBasicoApplication using Java 17.0.9 with PID 53474 (/home/jose/Escritorio/SpringBasico/build/classes/java/main started by jose in /home/jose/Escritorio/SpringBasico)
+2024-03-04 21:14 DEBUG 53474 --- [restartedMain] e.m.S.SpringBasicoApplication            : Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-03-04 21:14  INFO 53474 --- [restartedMain] e.m.S.SpringBasicoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-03-04 21:14  INFO 53474 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-04 21:14  INFO 53474 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-04 21:14  INFO 53474 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-04 21:14  INFO 53474 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-04 21:14  INFO 53474 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1513 ms
+2024-03-04 21:14  INFO 53474 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-04 21:14  INFO 53474 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a7c16879-2d20-4d29-bc48-c9b0dcaeef5b user=SA
+2024-03-04 21:14  INFO 53474 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:a7c16879-2d20-4d29-bc48-c9b0dcaeef5b'
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-04 21:14  INFO 53474 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-04 21:14  INFO 53474 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-04 21:14  WARN 53474 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-04 21:14  INFO 53474 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-04 21:14  INFO 53474 --- [restartedMain] e.m.S.SpringBasicoApplication            : Started SpringBasicoApplication in 3.33 seconds (process running for 4.045)
+2024-03-04 21:14  INFO 53474 --- [restartedMain] es.mde.ObjetoTipo                        : Llamado init(): Objeto por defecto
+2024-03-04 21:14  INFO 53474 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-04 21:14  WARN 53474 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-03-04 21:14  INFO 53474 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-04 21:14  INFO 53474 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-04 21:14  INFO 53937 --- [restartedMain] e.m.S.SpringBasicoApplication            : Starting SpringBasicoApplication using Java 17.0.10 with PID 53937 (/home/jose/Escritorio/SpringBasico/build/classes/java/main started by jose in /home/jose/Escritorio/SpringBasico)
+2024-03-04 21:14 DEBUG 53937 --- [restartedMain] e.m.S.SpringBasicoApplication            : Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-03-04 21:14  INFO 53937 --- [restartedMain] e.m.S.SpringBasicoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-03-04 21:14  INFO 53937 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-04 21:14  INFO 53937 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-04 21:14  INFO 53937 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-04 21:14  INFO 53937 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-04 21:14  INFO 53937 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1140 ms
+2024-03-04 21:14  INFO 53937 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-04 21:14  INFO 53937 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:adfb0e93-8e4e-4fc7-b5de-7029612bb89c user=SA
+2024-03-04 21:14  INFO 53937 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:adfb0e93-8e4e-4fc7-b5de-7029612bb89c'
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-04 21:14  INFO 53937 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-04 21:14  INFO 53937 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-04 21:14  WARN 53937 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-04 21:14  INFO 53937 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-04 21:14  INFO 53937 --- [restartedMain] e.m.S.SpringBasicoApplication            : Started SpringBasicoApplication in 3.104 seconds (process running for 3.502)
+2024-03-04 21:14  INFO 53937 --- [restartedMain] es.mde.ObjetoTipo                        : Llamado init(): Objeto por defecto
+2024-03-04 21:14  INFO 53937 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-04 21:14  WARN 53937 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-03-04 21:14  INFO 53937 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-04 21:14  INFO 53937 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-04 21:17  INFO 54752 --- [restartedMain] e.m.S.SpringBasicoApplication            : Starting SpringBasicoApplication using Java 17.0.9 with PID 54752 (/home/jose/Escritorio/SpringBasico/build/classes/java/main started by jose in /home/jose/Escritorio/SpringBasico)
+2024-03-04 21:17 DEBUG 54752 --- [restartedMain] e.m.S.SpringBasicoApplication            : Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-03-04 21:17  INFO 54752 --- [restartedMain] e.m.S.SpringBasicoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-03-04 21:17  WARN 54752 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-04 21:17  INFO 54752 --- [restartedMain] e.m.S.SpringBasicoApplication            : Started SpringBasicoApplication in 3.433 seconds (process running for 4.039)
+2024-03-04 21:17  INFO 54752 --- [restartedMain] es.mde.ObjetoTipo                        : Llamado init(): Objeto por defecto
+2024-03-04 21:17  WARN 54752 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-03-04 21:23  INFO 56697 --- [restartedMain] e.m.S.SpringBasicoApplication            : Starting SpringBasicoApplication using Java 17.0.10 with PID 56697 (/home/jose/Escritorio/SpringBasico/build/classes/java/main started by jose in /home/jose/Escritorio/SpringBasico)
+2024-03-04 21:23 DEBUG 56697 --- [restartedMain] e.m.S.SpringBasicoApplication            : Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-03-04 21:23  INFO 56697 --- [restartedMain] e.m.S.SpringBasicoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-03-04 21:23  WARN 56697 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-04 21:23  INFO 56697 --- [restartedMain] e.m.S.SpringBasicoApplication            : Started SpringBasicoApplication in 2.558 seconds (process running for 2.9)
+2024-03-04 21:23  INFO 56697 --- [restartedMain] es.mde.ObjetoTipo                        : Llamado init(): Objeto por defecto
+2024-03-04 21:23  WARN 56697 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-03-04 21:23  INFO 57067 --- [restartedMain] e.m.S.SpringBasicoApplication            : Starting SpringBasicoApplication using Java 17.0.10 with PID 57067 (/home/jose/Escritorio/SpringBasico/build/classes/java/main started by jose in /home/jose/Escritorio/SpringBasico)
+2024-03-04 21:23 DEBUG 57067 --- [restartedMain] e.m.S.SpringBasicoApplication            : Running with Spring Boot v3.2.3, Spring v6.1.4
+2024-03-04 21:23  INFO 57067 --- [restartedMain] e.m.S.SpringBasicoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-03-04 21:24  WARN 57067 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-04 21:24  INFO 57067 --- [restartedMain] e.m.S.SpringBasicoApplication            : Started SpringBasicoApplication in 2.757 seconds (process running for 3.08)
+2024-03-04 21:24  INFO 57067 --- [restartedMain] es.mde.ObjetoTipo                        : Llamado init(): Objeto por defecto
+2024-03-04 21:24  WARN 57067 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
