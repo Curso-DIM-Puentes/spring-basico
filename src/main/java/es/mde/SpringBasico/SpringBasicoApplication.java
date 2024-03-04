@@ -29,6 +29,8 @@ public class SpringBasicoApplication {
 //		miObjetoTipo.init();
 		miObjetoTipo = context.getBean("anotacion2",ObjetoTipo.class);
 		miObjetoTipo.init();
+		miObjetoTipo = context.getBean("config",ObjetoTipo.class);
+		miObjetoTipo.init();
 		context.close();
 	}
 
