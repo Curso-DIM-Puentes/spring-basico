@@ -16,16 +16,16 @@ public class SpringBasicoApplication {
 	private static final Logger log = LoggerFactory.getLogger(SpringBasicoApplication.class);
 	
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = SpringApplication.run(SpringBasicoApplication.class, args);
-		
-	
-		ObjetoTipo miObjetoTipo = new ObjetoTipo();
-		String tipoBean = "autowired"; //"xml";//"anotacion2";//"config";
-		miObjetoTipo = context.getBean(tipoBean,ObjetoTipo.class);
-		miObjetoTipo.init();
-		log.error("Recuperando el Bean \"{}\" del tipo {}", tipoBean,miObjetoTipo.getClass());
-
-		context.close();
+//		ConfigurableApplicationContext context = SpringApplication.run(SpringBasicoApplication.class, args);
+//		
+//	
+//		ObjetoTipo miObjetoTipo = new ObjetoTipo();
+//		String tipoBean = "autowired"; //"xml";//"anotacion2";//"config";
+//		miObjetoTipo = context.getBean(tipoBean,ObjetoTipo.class);
+//		miObjetoTipo.init();
+//		log.error("Recuperando el Bean \"{}\" del tipo {}", tipoBean,miObjetoTipo.getClass());
+//
+//		context.close();
 	}
 
 }

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component("anotacion1")
 public class ObjetoTipo {
 
-    private final Logger log = LoggerFactory.getLogger(ObjetoTipo.class);
+//    private final Logger log = LoggerFactory.getLogger(ObjetoTipo.class);
 
 	protected String nombreObjeto = "Objeto por defecto";
 
@@ -24,7 +24,7 @@ public class ObjetoTipo {
 	//el metodo que estamos poniendo que tiene en el Bean XML para que se inicie al crearse...
 	
 	public void init() {
-        log.info("Llamado init(): {}", nombreObjeto);
+//        log.info("Llamado init(): {}", nombreObjeto);
 	}
 	
 }
